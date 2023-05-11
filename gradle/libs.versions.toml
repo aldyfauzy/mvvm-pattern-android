@@ -1,0 +1,92 @@
+[versions]
+agp = "7.4.2"
+kotlin = "1.8.10"
+androidxCore = "1.9.0"
+androidxAppcompat = "1.6.1"
+androidxConstraint = "2.1.4"
+androidxJunit = "1.1.5"
+androidxExpresso = "3.5.1"
+androidxLifeCycle = "2.2.0"
+androidxPaging = "3.1.1"
+androidxRoom = "2.5.0"
+glide = "4.15.1"
+glidePalette = "2.1.2"
+retrofit = "2.9.0"
+material = "1.8.0"
+junit = "4.13.1"
+hilt = "2.28.3-alpha"
+hiltAndroidXVersion = '1.0.0-alpha02'
+coroutines = "1.6.4"
+navigationVersion = '2.5.3'
+
+[plugins]
+android-appliation = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt-plugin = { id = "dagger.hilt.android.plugin", version.ref = "hilt"}
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-navigation-safeargs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationVersion"}
+
+[libraries]
+navigation = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationVersion"}
+agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version = "1.8.21" }
+
+kotlin-stdlib = { module="org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin"}
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidxCore"}
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat"}
+androidx-constraint = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidxConstraint"}
+junit = { module = "junit:junit", version.ref = "junit"}
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+androidx-expresso = { module = "androidx.test.espresso:espresso-core", version.ref = "androidxExpresso"}
+material = { module= "com.google.android.material:material", version.ref = "material"}
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion"}
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion"}
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt"}
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt"}
+androidx-lifecycle = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "hiltAndroidXVersion"}
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltAndroidXVersion"}
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit"}
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit"}
+androidx-paging = { module = "androidx.paging:paging-runtime", version.ref = "androidxPaging"}
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide"}
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "androidxRoom"}
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "androidxRoom"}
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "androidxRoom"}
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "androidxRoom"}
+androidx-lifecycle-extension = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "androidxLifeCycle"}
+androidx-lifecycle-compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "androidxLifeCycle"}
+
+#material = { module= "com.google.android.material:material", version.ref = "material"}
+#androidx-lifecycle = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "hiltAndroidXVersion"}
+#androidx-lifecycle-extension = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "androidxLifeCycle"}
+#androidx-lifecycle-compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "androidxLifeCycle"}
+#androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltAndroidXVersion"}
+#androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidxCore"}
+#androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat"}
+#androidx-constraint = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidxConstraint"}
+#androidx-paging = { module = "androidx.paging:paging-runtime", version.ref = "androidxPaging"}
+#androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+#androidx-expresso = { module = "androidx.test.espresso:espresso-core", version.ref = "androidxExpresso"}
+#androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "androidxRoom"}
+#androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "androidxRoom"}
+#androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "androidxRoom"}
+#androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "androidxRoom"}
+#androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion"}
+#androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion"}
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+#retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit"}
+#retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit"}
+
+#glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide"}
+glide-pallete = { module = "com.github.florent37:glidepalette", version.ref = "glidePalette"}
+
+#hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt"}
+#hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt"}
+hilt-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt"}
+hilt-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
+
+#unit test
+##junit = { module = "junit:junit", version.ref = "junit"}
